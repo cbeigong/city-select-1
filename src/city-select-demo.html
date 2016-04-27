@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>收货地址控件demo</title>
+<link rel="stylesheet" href="cityselect.css" />
+<script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+<script type="text/javascript" src="areas.js"></script>
+<script type="text/javascript" src="cityselect.js"></script>
+<script type="text/javascript">
+jQuery(document).ready(function(){
+	/**
+	 默认初始化
+	**/
+	jQuery("#input1").citySelect({
+		provinceSelected:function(province){
+			
+		},
+		citySelected:function(areaId,province,city){
+				jQuery("#areaId1").val(areaId);
+				jQuery("#province1").val(province);
+				jQuery("#city1").val(city);
+		}
+	});
+	/**
+	通过areaId初始化控件
+	**/
+	jQuery("#input2").citySelect({
+		areaId:10145,
+		provinceSelected:function(province){
+			
+		},
+		citySelected:function(areaId,province,city){
+				jQuery("#areaId2").val(areaId);
+				jQuery("#province2").val(province);
+				jQuery("#city2").val(city);
+		}
+	});
+	/**
+	通过省、市初始化控件
+	**/
+	jQuery("#input3").citySelect({
+		province:'湖南',
+		city:'长沙',
+		provinceSelected:function(province){
+			
+		},
+		citySelected:function(areaId,province,city){
+				jQuery("#areaId3").val(areaId);
+				jQuery("#province3").val(province);
+				jQuery("#city3").val(city);
+		}
+	});
+});
+</script>
+</head>
+<body style="padding-top: 20px;">
+	
+	<div style="margin-left: 100px;">
+		<p>
+			地址控件demo,在html里定义一个div,需要注意的是，这个控件默认的宽度是300px
+		</p>
+		<textarea style="width: 300px;min-height: 100px;"><div id="inputDiv1"></div></textarea>
+		<p>然后在js里执行如下代码</p>
+		<pre>
+			/**
+	 默认初始化
+	**/
+	jQuery("#input1").citySelect({
+		provinceSelected:function(province){
+			
+		},
+		citySelected:function(areaId,province,city){
+				jQuery("#areaId1").val(areaId);
+				jQuery("#province1").val(province);
+				jQuery("#city1").val(city);
+		}
+	});
+	/**
+	通过areaId初始化控件
+	**/
+	jQuery("#input2").citySelect({
+		areaId:10145,
+		provinceSelected:function(province){
+			
+		},
+		/**
+			选择城市里回调函数
+		**/
+		citySelected:function(areaId,province,city){
+				jQuery("#areaId2").val(areaId);
+				jQuery("#province2").val(province);
+				jQuery("#city2").val(city);
+		}
+	});
+	/**
+	通过省、市初始化控件
+	**/
+	jQuery("#input3").citySelect({
+		province:'湖南',
+		city:'长沙',
+		provinceSelected:function(province){
+			
+		},
+		/**
+			选择城市里回调函数
+		**/
+		citySelected:function(areaId,province,city){
+				jQuery("#areaId3").val(areaId);
+				jQuery("#province3").val(province);
+				jQuery("#city3").val(city);
+			}
+		});
+			
+		</pre>
+		<div id="input1"></div>
+		<div style="display: inline-block;width: 300px;">
+			<label>areaId：</label><input  id="areaId1" /><br/>
+			<label>省：</label><input  id="province1" /><br/>
+			<label>城市：</label><input  id="city1" />
+		</div>
+		<div id="input2"></div>
+		<div style="display: inline-block;width: 300px;">
+			<label>areaId：</label><input  id="areaId2" /><br/>
+			<label>省：</label><input  id="province2" /><br/>
+			<label>城市：</label><input  id="city2" />
+		</div>
+		<div id="input3"></div>
+		<div style="display: inline-block;width: 300px;">
+			<label>areaId：</label><input  id="areaId3" /><br/>
+			<label>省：</label><input  id="province3" /><br/>
+			<label>城市：</label><input  id="city3" />
+		</div>
+	</div>
+	
+</body>
+</html>

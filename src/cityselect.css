@@ -1,0 +1,237 @@
+
+body, div, table, h1, h2, h3, h4, h5, h6, ul, ol, li, p, dl, dt, dd, th,
+	td, form, fieldset {
+	margin: 0;
+	padding: 0
+}
+
+table {
+	border-collapse: collapse
+}
+
+pre, code {
+	white-space: pre;
+	font-family: "Courier New", Courier, monospace
+}
+
+li {
+	list-style: none
+}
+
+em {
+	font-style: normal
+}
+
+img, object {
+	border: 0;
+	outline: 0
+}
+
+a img {
+	vertical-align: top
+}
+
+abbr, article, aside, audio, canvas, datalist, details, figure, footer,
+	header, menu, nav, output, progress, section, video {
+	display: block;
+	margin: 0;
+	padding: 0
+}
+
+/* body {
+	color: #333;
+	font: 400 12px/1.6 arial, sans-serif
+} */
+
+textarea:disabled, textarea[disabled], textarea[disabled=disabled],
+	textarea.disabled {
+	background: #F5F5F5
+}
+
+.hide {
+	display: none;
+}
+
+.clearfix {
+	zoom: 1;
+}
+
+.clearfix:after {
+	content: "";
+	display: block;
+	clear: both;
+	visibility: hidden;
+	height: 0;
+}
+
+
+.ks-overlay {
+	position: absolute;
+	left: -9999px;
+	top: -9999px;
+	outline: 0;
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+.ks-overlay-hidden {
+	visibility: hidden;
+}
+
+.bf-select {
+	float:left;
+	border: 1px solid #ccc;
+	font-size: 12px;
+	padding: 4px 8px;
+	outline: 0;
+	position: relative;
+	cursor: pointer;
+	background-color: #fff;
+}
+
+.bf-select .bf-menu-button-dropdown {
+	position: absolute;
+	top: 10px;
+	right: 8px;
+	width: 10px;
+	height: 5px;
+	background:url(dropdown-30-40.png) -10px -25px no-repeat;
+}
+
+.lSelect {
+	font: 400 12px/1.6 arial, sans-serif;
+	width: 282px;
+	margin-right: 10px;
+}
+
+.city-select-tab {
+	border-bottom: 1px solid #ccc;
+	border-right: 1px solid #ccc;
+	border-top: 1px solid #ccc;
+	width: 299px;
+	height: 35px;
+	background: #f0f0f0;
+}
+
+.city-select-tab a {
+	float: left;
+	display: inline;
+	margin-bottom: -1px;
+	padding: 8px 20px;
+	width: 109px;
+	border-left: 1px solid #ccc;
+	border-bottom: 1px solid transparent;
+	color: #4D4D4D;
+	text-align: center;
+	outline: 0;
+}
+
+.city-select-tab .last {
+	width: 108px
+}
+
+
+.city-select-tab .current {
+	background: #fff;
+	border-bottom: 1px solid #fff;
+	color: #104E8B;
+}
+
+.city-select {
+	border: 1px #ccc solid;
+	border-top: 0;
+	padding: 10px 15px;
+	width: 268px;
+	background: #fff;
+	font-size: 12px;
+}
+
+.city-title {
+	margin-right: 10px;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	color: #ccc;
+}
+
+.city-select dl {
+	line-height: 2;
+	clear: both;
+	padding: 3px 0;
+	margin: 0
+}
+
+.city-select dl:after {
+	clear: both;
+	content: " ";
+	display: block;
+	font-size: 0;
+	height: 0;
+	visibility: hidden;
+}
+
+.city-select dt {
+	display: inline-block;
+	width: 25px;
+	float: left;
+	padding-right: 10px;
+	font-weight: 700;
+	text-align: right;
+}
+
+.city-select dd {
+	white-space: normal;
+	width: 233px;
+	display: inline;
+	float: left;
+	margin-left: 0;
+}
+
+.city-select a {
+	display: inline-block;
+	color: #4D4D4D;
+	padding: 0 10px;
+	outline: 0;
+	text-decoration: none;
+	white-space: nowrap;
+	margin-right: 2px;
+}
+
+.city-select a:hover, .city-select a:focus {
+	background-color: #4f90e4;
+	border-radius: 2px;
+	color: #104E8B;
+}
+
+.city-select a.current {
+	background-color: #1b4c8e;
+	color: #ffffff;
+	border-radius: 2px
+}
+
+.city-select .border-top {
+	border-top: 1px solid #ccc;
+}
+
+.city-select-province dd, .city-select-city dd, .city-select-street dd,
+	.city-select-district dd {
+	width: 270px;
+}
+
+.ks-overlay {
+	position: absolute;
+	left: -9999px;
+	top: -9999px;
+	z-index: 999999;
+}
+
+.ks-overlay-hidden {
+	visibility: hidden;
+}
+
+.ks-overlay-mask-hidden {
+	display: none;
+}
+
+.ks-overlay-shown {
+	visibility: visible;
+}

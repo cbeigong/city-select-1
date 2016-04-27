@@ -53,6 +53,12 @@
 		});
 ```
 
+##效果图  
+   效果图一：  
+ ![image](src/cityselect1.png)  
+   效果图二：  
+ ![image](src/cityselect2.png)  
+ 
 ##Demo 请查看
 ```html 
 		src/city-select-demo.html
